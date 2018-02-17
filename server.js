@@ -2,7 +2,7 @@ var express = require('express');
 var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 
-var PORT = process.env.PORT || 8080;
+var PORT = 8080;
 
 var app = express();
 
@@ -24,3 +24,4 @@ app.set("view engine", "handlebars");
 app.listen(PORT, function() {
 	console.log("App now listening at localhost:" + PORT);
 });
+
